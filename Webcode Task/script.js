@@ -8,8 +8,8 @@ const clearElements = (parent) => {
 
 // On First Load of the script file
 (async () => {
-  // const res = await fetch("https://anapioficeandfire.com/api/books");
-  const res = await fetch("https://www.anapioficeandfire.com/api/books");
+  const res = await fetch("https://anapioficeandfire.com/api/books");
+  // const res = await fetch("https://www.anapioficeandfire.com/api/books");
   const books = await res.json();
   const suggestion = document.getElementById("datalist");
   books.map((book) => {
@@ -22,8 +22,8 @@ const clearElements = (parent) => {
 // Fetch Book based on the search
 const fetchBook = async (filter) => {
   try {
-    // const res = await fetch("https://anapioficeandfire.com/api/books");
-    const res = await fetch("https://www.anapioficeandfire.com/api/books");
+    const res = await fetch("https://anapioficeandfire.com/api/books");
+    // const res = await fetch("https://www.anapioficeandfire.com/api/books");
     const books = await res.json();
     const oldBook = document.getElementById("book");
     let filteredBooks = books.filter(
